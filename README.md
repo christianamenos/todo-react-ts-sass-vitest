@@ -14,7 +14,7 @@ Selected:
 - **Framework:** React
 - **Variant:** TypeScript
 
-Now let's move to the project and install dependencies and run dev mode to test that it's working properly:
+After Vite created the project we moved to the project, installed the dependencies and run the project in dev mode to test that it worked properly:
 
 ```bash
 cd todo-react-ts-vitest
@@ -22,4 +22,8 @@ npm install
 npm run dev
 ```
 
-Now we are going to
+After the quick check, we proceeded cleaning the project of unnecessary assets and code.
+
+## Resources/References
+
+- [Setup Youtube video by Coding Garden](https://www.youtube.com/watch?app=desktop&v=cchqeWY0Nak)
