@@ -65,6 +65,29 @@ Once installed, we updatede the `.eslintrc.json` config adding:
 "extends": ["airbnb", "airbnb-typescript", "airbnb/hooks"]
 ```
 
+After this, we installed prettier plugins for ESLint, so that prettier works alongside with our defined ESLint rules:
+
+```bash
+npm i -D prettier eslint-config-prettier eslint-plugin-prettier
+```
+
+After the installations, we will be creating a `.prettier.json` file with the content:
+
+```json
+{
+  "trailingComma": "es5",
+  "tabWidth": 2,
+  "semi": true,
+  "singleQuote": true
+}
+```
+
+And added the plugin for prettier in the plugins section of the `.eslintrc.json` file:
+
+```json
+"plugins": ["react", "prettier"],
+```
+
 ## Resources/References
 
 - [Setup Youtube video by Coding Garden](https://www.youtube.com/watch?app=desktop&v=cchqeWY0Nak)
