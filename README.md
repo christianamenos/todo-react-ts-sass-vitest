@@ -88,6 +88,62 @@ And added the plugin for prettier in the plugins section of the `.eslintrc.json`
 "plugins": ["react", "prettier"],
 ```
 
+With prettier ready, our next step was to add vitest:
+
+```bash
+npm i -D vitest
+```
+
+And we change the `vite.config.ts` file with:
+
+```typescript
+/* eslint-disable @typescript-eslint/triple-slash-reference */
+/* eslint-disable import/no-extraneous-dependencies */
+/// <reference types="vitest" />
+/// <reference types="vite/client" />
+
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [react()],
+  test: {
+    globals: true,
+    environment: 'jsdom',
+    setupFiles: ['./src/setupTests.ts'],
+  },
+});
+```
+
+After that, we installed testing-library to test react specifically:
+
+```bash
+npm i -D @testing-library/react @testing-library/jest-dom
+```
+
+After that we created a the file `src/setupTests.ts` with the content:
+
+```typescript
+/* eslint-disable import/no-extraneous-dependencies */
+import matchers from '@testing-library/jest-dom/matchers';
+import { expect } from 'vitest';
+
+expect.extend(matchers);
+```
+
+And added the script test in `package.json`:
+
+```json
+"test": "vitest"
+```
+
+Now we are able to run tests using:
+
+```bash
+npm run test
+```
+
 ## Resources/References
 
 - [Setup Youtube video by Coding Garden](https://www.youtube.com/watch?app=desktop&v=cchqeWY0Nak)
