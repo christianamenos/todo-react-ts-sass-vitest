@@ -144,6 +144,14 @@ Now we are able to run tests using:
 npm run test
 ```
 
+Finally, we installed SASS as dependency:
+
+```bash
+npm i -D sass @types/sass
+```
+
 ## Resources/References
 
 - [Setup Youtube video by Coding Garden](https://www.youtube.com/watch?app=desktop&v=cchqeWY0Nak)
+- [Using Testing Library jest-dom with Vitest](https://markus.oberlehner.net/blog/using-testing-library-jest-dom-with-vitest/)
+- [Common mistakes with React Testing Library](https://kentcdodds.com/blog/common-mistakes-with-react-testing-library)
