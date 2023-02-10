@@ -155,3 +155,10 @@ npm i -D sass @types/sass
 - [Setup Youtube video by Coding Garden](https://www.youtube.com/watch?app=desktop&v=cchqeWY0Nak)
 - [Using Testing Library jest-dom with Vitest](https://markus.oberlehner.net/blog/using-testing-library-jest-dom-with-vitest/)
 - [Common mistakes with React Testing Library](https://kentcdodds.com/blog/common-mistakes-with-react-testing-library)
+
+TO CHECK:
+
+- [todomvc](https://todomvc.com/examples/typescript-react/#/): a project to learn how to apply different libraries/frameworks to create a TO DO webapp. To take some inspiration and to learn from it.
+- [todoist](https://todoist.com/es): a commercial TO DO application to take some inspiration.
+- [EditorConfig](https://www.editorconfig.org/): file to keep consistent styles across the collaborators of a project, tryint to keep it across different editors.
+- [Husky](https://typicode.github.io/husky/#/): a tool to trigger certain actions when commiting or pushing changes into a repository.
