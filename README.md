@@ -150,6 +150,26 @@ Finally, we installed SASS as dependency:
 npm i -D sass @types/sass
 ```
 
+## Requirements list
+
+### P0: Minimum required elements
+
+- As a user, I want to create "todo" items with a descriptive name.
+- As a user, I want to edit "todo" items.
+- As a user, I want to delete "todo" items.
+- As a user, I want to mark "todo" items when I finish them.
+- As a user, I want to mark completed "todo" items, specially in case I changed the state by mistake, or for recurrent "todo's".
+- As a user, I want to filter "todo" items by completion state (All / Completed / Pending).
+- As a user, I want to save my state, so that I can continue where I left it when I come back to the application.
+
+### P1: Nice to have
+
+- As a user, I want to order my "todo" items, so that I can set specific priorities.
+- As a user, I want to add a description to de "todo" items, so that I can add information, resources, learnings or additional instructions on how to complete the task.
+- As a user, I want to mark a due date for the "todo" items, so that I set specific finalization dates in the tasks.
+- As a user, I want to search through the list of "todo" items, so that I can find tasks by title, description, date, ...
+- As a user, I want to manage state columns, and move the tasks arround, so that I can have a visual representation of what is still missing, what I'm working on, what is in review, etc
+
 ## Resources/References
 
 - [Setup Youtube video by Coding Garden](https://www.youtube.com/watch?app=desktop&v=cchqeWY0Nak)
